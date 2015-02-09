@@ -4,6 +4,14 @@ A failfast module for idiomatic nodejs splitting error handling from successful 
 
 I recognize that it is a matter of style, but I prefer to deal primarily with the success case and let errors either fall into error-handlers or crash the app. That said, I've used code similar to this `failfast` function in the past to split off errors and decided it was 'bout time I made it its own thing.
 
+**I'm tired of seeing:**
+```javascript
+      if (err) {
+        return callback(err);
+      }
+```
+polluting my boomerang code.
+
 ## Example
 ```javascript
 var util = require('util');
