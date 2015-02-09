@@ -1,0 +1,30 @@
+{
+  "name": "fail-fast",
+  "version": "1.0.0",
+  "description": "A failfast module for idiomatic nodejs; splits error handling from successful continuation.",
+  "keywords": [
+    "failfast"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flitbit/fail-fast"
+  },
+  "author": "Phillip Clark <phillip@flitbit.com>",
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.1.0",
+    "node-uuid": "^1.4.2",
+    "request": "^2.53.0"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "index.js",
+      "data-cover-never": "node_modules"
+    }
+  }
+}
