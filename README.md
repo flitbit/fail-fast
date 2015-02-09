@@ -1,4 +1,4 @@
-#fail-fast
+#fail-fast [![Build Status](https://travis-ci.org/flitbit/fail-fast.png?branch=master)](https://travis-ci.org/flitbit/fail-fast)
 
 A failfast module for idiomatic nodejs splitting error handling from successful continuation.
 
